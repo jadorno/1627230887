@@ -1,0 +1,9 @@
+Flask
+numpy
+scipy
+h5py
+pandas
+seaborn
+tables
+gunicorn
+sqlalchemy
