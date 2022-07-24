@@ -108,7 +108,7 @@ def get_study_config():
 				query = q_base + q_distance[compare_01[idx][key]] + q_algorithm
 				result = pd.read_sql(query, con=engine).sample()
 				result = result.to_dict(orient='records')[0]
-				result['scatter'] = 'api/data/'+str(Path(result['scatter']).name)
+				result['scatter'] = 'api/data/'+ result['dataset'] +'-'+ result['algorithm'] +'-'+ str(int(result['sampling'])) +'-'+ str(result['size']) +'-'+ str(int(result['opacity'])) + '.png'
 				result['bin'] = compare_01[idx][key]
 				del result['json']
 				del result['clusters']
@@ -130,7 +130,7 @@ def get_study_config():
 				query = q_base + q_distance[compare_01[idx][key]] + q_algorithm
 				result = pd.read_sql(query, con=engine).sample()
 				result = result.to_dict(orient='records')[0]
-				result['scatter'] = 'api/data/'+str(Path(result['scatter']).name)
+				result['scatter'] = 'api/data/'+ result['dataset'] +'-'+ result['algorithm'] +'-'+ str(int(result['sampling'])) +'-'+ str(result['size']) +'-'+ str(int(result['opacity'])) + '.png'
 				result['bin'] = compare_01[idx][key]
 				del result['json']
 				del result['clusters']
@@ -152,7 +152,7 @@ def get_study_config():
 				query = q_base + q_auc[compare_02[idx][key]] + q_algorithm
 				result = pd.read_sql(query, con=engine).sample()
 				result = result.to_dict(orient='records')[0]
-				result['scatter'] = 'api/data/'+str(Path(result['scatter']).name)
+				result['scatter'] = 'api/data/'+ result['dataset'] +'-'+ result['algorithm'] +'-'+ str(int(result['sampling'])) +'-'+ str(result['size']) +'-'+ str(int(result['opacity'])) + '.png'
 				result['bin'] = compare_02[idx][key]
 				del result['json']
 				del result['clusters']

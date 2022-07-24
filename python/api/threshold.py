@@ -269,7 +269,15 @@ def get_threshold_get():
 			result = pd.read_sql(query, con=engine)
 			sqlite_connection.close()
 
-			result.scatter = ['api/data/'+str(Path(x).name) for x in result.scatter.values]
+
+			scatter_list = []
+			for idx, row in result.iterrows():
+				scatter_list.append(
+					'api/data/'+ row['dataset'] +'-'+ row['algorithm'] +'-'+ str(int(row['sampling'])) +'-'+ str(row['size']) +'-'+ str(int(row['opacity'])) + '.png'
+				)
+
+			result.scatter = scatter_list
+			# result.scatter = ['api/data/'+str(Path(x).name) for x in result.scatter.values]
 			response = make_response(result.to_json(orient='records'), 200)
 			# payload = df.loc[query_booleans].sort_values(by=['distance'], ascending=False)
 
