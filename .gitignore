@@ -27,3 +27,4 @@ yarn-error.log*
 scripts
 __pycache__
 config
+react/build
