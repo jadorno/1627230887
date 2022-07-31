@@ -121,10 +121,10 @@ export default function App() {
           <Route path="/vis-4">
             <Visualization4 />
           </Route>
-          <Route path="/vis-6">
+          <Route path="/vis-5">
             <Visualization5 />
           </Route>
-          <Route path='/vis-5' component={() => { 
+          <Route path='/vis-5-alt' component={() => { 
             window.location.href = 'http://scatter2.projects.jadorno.com/'; 
             return null;
           }}/>

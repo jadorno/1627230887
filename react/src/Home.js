@@ -32,7 +32,7 @@ export default function Home() {
 
             <Grid item><Button style={widthStyle} component={Link} to="/vis-1" variant="contained">Automatic</Button></Grid>
             <Grid item><Button style={widthStyle} component={Link} to="/vis-2" variant="contained">Manual</Button></Grid>
-            <Grid item><a style={linkStyle} href="http://scatter2.projects.jadorno.com/"><Button style={widthStyle} variant="contained">User Study</Button></a></Grid>
+            <Grid item><Button style={widthStyle} component={Link} to="/vis-5" variant="contained">User Study</Button></Grid>
             <Grid item><a style={linkStyle} href="https://osf.io/cxgq2/?view_only=bbcf6c781bec44779fcb64cf0871e91b"><Button style={widthStyle} variant="contained">Data</Button></a></Grid>
             <Grid item><a style={linkStyle} href="https://ieeexplore.ieee.org/document/9826389"><Button style={widthStyle} variant="contained">Paper</Button></a></Grid>
             <Grid item><a style={linkStyle} href="https://github.com/jadorno/usf-dataviz-1627230887"><Button style={widthStyle} variant="contained">Github</Button></a></Grid>
