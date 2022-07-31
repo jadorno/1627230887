@@ -4,10 +4,5 @@
 Full project hosted at [scatter.projects.jadorno.com](http://scatter.projects.jadorno.com)
 
 Paper available at [ieeexplore](https://ieeexplore.ieee.org/document/9826389)
-P
-reprint available at [arxiv](https://arxiv.org/abs/2207.03355)
 
-
-
-
-\
+Preprint available at [arxiv](https://arxiv.org/abs/2207.03355)
