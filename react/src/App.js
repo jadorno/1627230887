@@ -73,21 +73,6 @@ export default function App() {
           </ListItem>
         ))}
       </List>
-      <Divider />
-      <List>
-        {[
-          {'name': 'Data', 'link': '/external-1'},
-          {'name': 'Paper', 'link': '/external-2'},
-          {'name': 'Github', 'link': '/external-3'}
-        ].map((data, index) => (
-          <ListItem button component={Link} to={data.link} key={data.name}>
-            <ListItemIcon>
-              <RadioButtonCheckedIcon />
-            </ListItemIcon>
-            <ListItemText primary={data.name} />
-          </ListItem>
-        ))}
-      </List>
     </Box>
   );
 
