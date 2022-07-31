@@ -60,8 +60,8 @@ export default function App() {
       <List>
         {[
           {'name': 'Automatic', 'link': '/vis-1'}, 
-          //{'name': 'Optimal All', 'link': '/vis-3'},
-          //{'name': 'Optimal Each', 'link': '/vis-4'},
+          {'name': 'Optimal All', 'link': '/vis-3'},
+          {'name': 'Optimal Each', 'link': '/vis-4'},
           {'name': 'Manual', 'link': '/vis-2'},
           {'name': 'User Study', 'link': '/vis-5'}
         ].map((data, index) => (
@@ -76,9 +76,9 @@ export default function App() {
       <Divider />
       <List>
         {[
-          {'name': 'Data', 'link': '/external-1'}
-          //{'name': 'Notebooks', 'link': '/vis-3'},
-          //{'name': 'User Study Data', 'link': '/external-2'}
+          {'name': 'Data', 'link': '/external-1'},
+          {'name': 'Paper', 'link': '/external-2'},
+          {'name': 'Github', 'link': '/external-3'}
         ].map((data, index) => (
           <ListItem button component={Link} to={data.link} key={data.name}>
             <ListItemIcon>
@@ -145,6 +145,14 @@ export default function App() {
           }}/>
           <Route path='/external-1' component={() => { 
             window.location.href = 'https://osf.io/cxgq2/?view_only=bbcf6c781bec44779fcb64cf0871e91b'; 
+            return null;
+          }}/>
+          <Route path='/external-2' component={() => { 
+            window.location.href = 'https://ieeexplore.ieee.org/document/9826389'; 
+            return null;
+          }}/>
+          <Route path='/external-3' component={() => { 
+            window.location.href = 'https://github.com/jadorno/usf-dataviz-1627230887'; 
             return null;
           }}/>
         </Switch>
