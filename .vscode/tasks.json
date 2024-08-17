@@ -9,14 +9,13 @@
 		{
 			"label": "npm run build",
 			"type": "shell",
-			"command": "cd /workspaces/1627230887/react/ && yarn build"
+			"command": "cd /workspaces/1627230887/react/ && NODE_OPTIONS=--openssl-legacy-provider yarn build"
 		},
 		{
 			"label": "start gunicorn",
 			"type": "shell",
 			"command": "cd /workspaces/1627230887/python/ && gunicorn server:app --config config.py"
 		}
-
 	]
 }
 
