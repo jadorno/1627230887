@@ -21,6 +21,7 @@ RUN apt update && apt upgrade -y \
     && rm -rf /var/lib/apt/lists/*
 
 COPY --from=build /usr/src/app/build /usr/share/nginx/html
+COPY config/nginx.conf /etc/nginx/nginx.conf
 
 WORKDIR /usr/src/app
 

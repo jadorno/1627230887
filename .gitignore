@@ -26,5 +26,7 @@ yarn-error.log*
 
 scripts
 __pycache__
-config
 react/build
+config/nginx.podman.prod.conf
+config/nginx.podman.dev.conf
+config/nginx.compose.conf
