@@ -5,15 +5,23 @@
 		"args": { "VARIANT": "bullseye" }
 	},
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"ms-python.python",
-		"dbaeumer.vscode-eslint",
-		"eamodio.gitlens"
-	],
+	"customizations": {
+		"codespaces": {
+			"extensions": [
+				"ms-python.python",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens"
+			]
+		},
+		"vscode": {
+			"extensions": [
+				"ms-python.python",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens"
+			]
+		},
+		"settings": {}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	"forwardPorts": [],
